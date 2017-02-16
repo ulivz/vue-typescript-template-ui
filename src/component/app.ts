@@ -1,5 +1,6 @@
 import * as Vue from 'vue';
 
+
 export default Vue.extend({
     template: require('./app.html'),
     data() {
@@ -18,6 +19,9 @@ export default Vue.extend({
         handleClose(key, keyPath) {
             console.log(key, keyPath);
         }
+    },
+    conmponents: {
+
     },
     mounted() {
         console.log(this);
