@@ -9,11 +9,11 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "vue": "^2.0.0",
+    "vue-router": "^2.0.0",
     "@types/es6-promise": "0.0.32",
     "@types/lodash": "^4.14.52",
     "@types/requirejs": "^2.0.0",
-    "vue": "^2.0.0",
-    "vue-router": "^2.0.0",
     "@types/vue-resource": "^0.9.3",
     "element-theme": "^0.7.1",
     "element-ui": "^1.1.6"
