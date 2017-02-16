@@ -1,0 +1,33 @@
+{
+  "name": "vue-typescript-template-ui",
+  "description": "A Vue project template developed with TypeScript 2.0 and element-ui",
+  "version": "1.0.0",
+  "author": "toxichl",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "@types/es6-promise": "0.0.32",
+    "@types/lodash": "^4.14.52",
+    "@types/requirejs": "^2.0.0",
+    "@types/vue": "^2.0.0",
+    "@types/vue-resource": "^0.9.3",
+    "@types/vue-router": "^2.0.0",
+    "element-theme": "^0.7.1",
+    "element-ui": "^1.1.6"
+  },
+  "devDependencies": {
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.23.1",
+    "element-theme-default": "^1.1.6",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^2.0.0",
+    "typescript": "^2.0.0",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
+}

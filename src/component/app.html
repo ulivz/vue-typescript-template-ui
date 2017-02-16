@@ -1,0 +1,25 @@
+<div class="app">
+    <header>
+        <div class="header-wrapper">
+            <el-row>
+                <el-col :span="24">
+                    <div class="grid-content bg-purple-dark">I'm header</div>
+                </el-col>
+            </el-row>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content-wrapper">
+            <span>I'm content</span>
+        </div>
+        <el-radio class="radio" v-model="radio" label="1">备选项</el-radio>
+        <el-radio class="radio" v-model="radio" label="2">备选项</el-radio>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <span>I'm footer</span>
+        </div>
+    </footer>
+</div>
