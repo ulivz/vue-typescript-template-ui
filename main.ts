@@ -6,6 +6,7 @@ import './theme/index.css';
 import routes from './src/routes.ts';
 
 Vue.use(ElementUI);
+Vue.use(VueRouter);
 
 const router = new VueRouter(routes);
 
