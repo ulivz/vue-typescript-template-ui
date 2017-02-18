@@ -8,7 +8,7 @@ export default {
             component: page1
         },
         {
-            path: 'page2',
+            path: '/page2',
             component: page2
         }
     ]

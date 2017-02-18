@@ -32,7 +32,7 @@ module.exports = {
     },
     resolve: {
         // Add `.ts` and `.tsx` as a resolvable extension.
-        extensions: ['.ts', '.tsx', '.js'],
+        extensions: ['.ts', '.tsx', '.js', 'html'],
         alias: {
             'vue$': 'vue/dist/vue.common.js'
         }

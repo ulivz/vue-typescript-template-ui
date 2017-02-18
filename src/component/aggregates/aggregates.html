@@ -1,0 +1,17 @@
+<el-col :xs="8" :sm="6" :md="4" :lg="3">
+    <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
+        <el-submenu index="1">
+            <template slot="title">实体1</template>
+            <el-menu-item-group title="分组一">
+                <el-menu-item index="1-1">
+                    <router-link to="/page1">Go Page1</router-link>
+                </el-menu-item>
+                <el-menu-item index="1-2">
+                    <router-link to="/page2">Go Page2</router-link>
+                </el-menu-item>
+            </el-menu-item-group>
+        </el-submenu>
+        <el-menu-item index="2">实体2</el-menu-item>
+        <el-menu-item index="3">实体3</el-menu-item>
+    </el-menu>
+</el-col>

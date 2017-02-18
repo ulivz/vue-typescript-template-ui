@@ -1,5 +1,6 @@
 import * as Vue from 'vue';
-
+import header from './component/header/header';
+import aggregate from './component/aggregates/aggregstes';
 
 export default Vue.extend({
     template: require('./app.html'),
@@ -20,10 +21,11 @@ export default Vue.extend({
             console.log(key, keyPath);
         }
     },
-    conmponents: {
-
-    },
     mounted() {
         console.log(this);
+    },
+    components: {
+        'admin-header': header,
+        aggregate
     }
 });
