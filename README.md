@@ -162,6 +162,28 @@ issue | solution
 `Typescript`编译表示不认识`vue`声明文件中的类型`Promise` | 安装es6-prommise `npm i @types/es6-promise -save`
 `VueRouter is not a constructor` | 在`webpack`的 `resolve.alias` 中配置：`'vue-router$': 'vue-router/dist/vue-router.common.js'`
 
+
+## 千万不要在本项目中使用Vue-resource
+
+在之前进行项目升级的过程中，由于原项目采用的技术栈是`vue@1.0.21`、`TypeScript@1.8`、`vue-resource@0.9.3`和`vue-router@0.7.13`、`webpack@1.13.1`，我按照首先升级`typescript`, 接着升级`Webpack`，最后升级`Vue`, 结果遇到很多坑了。关于这个问题根本原因，在于`vue-resource`使用的`type`声明文件仍然仅仅使用于`vue`:
+
+运行：
+
+```
+npm install --save @types/lodash
+```
+
+你会看到：
+
+<img style="width: 70%" src="warning.png" alt="">
+
+这样一来，你会看到各种花式错误，例如`vue-router 2`找到了`vue 1`的`d.ts`, 这还能好好地玩耍吗？关于这个问题，我已经提交`PR`。
+
+因此，在 `vue-resource` 官方仍未升级`d.ts`的时候，请不要使用它。
+
+你可以用其他的库(和`vue`没有关系的库均可)来代替它，如`fetch`、`axios`。
+
+
   [1]: https://github.com/vuejs/vue
   [2]: https://github.com/Microsoft/TypeScript
   [3]: https://github.com/ElemeFE/element
