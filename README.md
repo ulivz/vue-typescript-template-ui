@@ -97,9 +97,9 @@ element-ui | 1.0.0+
 
 ## Typescript 2 以前
 
-声明文件（.d.ts文件）是在TypeScript中使用现有JavaScript库的一个基本组成部分。
+声明文件（`.d.ts`文件）是在`TypeScript`中使用现有`JavaScript`库的一个基本组成部分。
 
-所有的js库在引入ts时，都必须顺带地加入类型声明文件（d.ts）,早期，有一个非常出色的库——[DefinitelyTyped][10]，它拥有一些主流的js库的类型声明文件。此外，为了更便捷地进行安装，还有一个非常强大的ts类型声明管理库——[typings][11]，它允许你通过这样的方式进行安装一个库的类型声明文件：
+所有的`js`库在引入`ts`时，都必须顺带地加入类型声明文件（`d.ts`）,早期，有一个非常出色的库——[DefinitelyTyped][10]，它拥有一些主流的js库的类型声明文件。此外，为了更便捷地进行安装，还有一个非常强大的ts类型声明管理库——[typings][11]，它允许你通过这样的方式进行安装一个库的类型声明文件：
 
 首先全局安装typings：
 ```
@@ -129,27 +129,29 @@ import * as Vue from 'vue';
 
 ## Typescript2以后
 
-参见微软的这篇博文：[The Future of Declaration Files][15]
+可以参见微软的这篇博文：[The Future of Declaration Files][15]
 
 总的意思就是，**在TypeScript 2.0中获取类型声明除了npm之外不需要任何工具。**
 
 比如，想要引入lodash，只需要执行:
+
 ```
 npm install --save @types/lodash
 ```
+
 然后你就可以直接使用了：
+
 ```
 import * as _ from "lodash";
 _.padStart("Hello TypeScript!", 20, " ");
 ```
 
-此外，目前在使用Typescript2 + Vue2遇到的问题，及其解决办法整理如下：
+此外，目前在使用`Typescript2 + Vue2`遇到的问题，及其解决办法整理如下：
 
 issue | solution
 --- | ---
-typescript编译表示不认识vue声明文件中的类型Promise | 安装es6-prommise `npm i @types/es6-promise -save`
-指令递归会报错，提示堆栈溢出 | 尚未解决
-
+`Typescript`编译表示不认识`vue`声明文件中的类型`Promise` | 安装es6-prommise `npm i @types/es6-promise -save`
+`VueRouter is not a constructor` | 在`webpack`的 `resolve.alias` 中配置：`'vue-router$': 'vue-router/dist/vue-router.common.js'`
 
   [1]: https://github.com/vuejs/vue
   [2]: https://github.com/Microsoft/TypeScript
