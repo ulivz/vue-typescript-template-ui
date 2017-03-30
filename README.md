@@ -135,7 +135,6 @@ import * as Vue from 'vue';
 
 但是，`Typescript2`开始有了一些变化，请看下文。
 
----
 
 ## Typescript2以后
 
