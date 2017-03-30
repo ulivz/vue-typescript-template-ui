@@ -42,17 +42,17 @@ npm run build
 
 基本的配置过程如下：
 
-- **安装element-theme**：
+- 安装element-theme：
 ```
 $ npm i element-theme -D
 ```
 
-- **安装element-theme-default**
+- 安装element-theme-default
 ```
 $ npm i element-theme-default -D 
 ```
 
-- **生成变量文件**
+- 生成变量文件
 
 ```
 $ node_modules/.bin/et -i
@@ -64,7 +64,7 @@ $ node_modules/.bin/et -i
 ![image_1b92fv4b81jr56i5o5l4o0h4r1g.png-75.2kB][8]
 
 
-- **生成主题文件**
+- 生成主题文件
 在上一步编辑好 `element-variables.css` 后，执行此步骤:
 ```
 $ node_modules/.bin/et
@@ -74,7 +74,7 @@ $ node_modules/.bin/et
 
 这里你也可以加上`-w`参数进行实时编译。
 
-- **在项目中引入**
+- 在项目中引入
 
 注意，只需要引入`index.css`
 ```
