@@ -33,26 +33,27 @@ npm run build
 
 倘若你不想引入`element-ui`，你也可以使用我的另外一个没有引入UI组件的纯净库：[vue-typescript-template][5]，这个库仅仅配置了`Vue 2.0`和`TypeScript`的基本开发环境。
 
+
 # UI主题
 
-关于主题的配置可以参考 [custom-theme][6]
+关于主题的配置可以参考`element-ui`官方的 [`custom-theme`][6]
 
 基本的配置过程如下：
 
 - **安装element-theme**：
 ```
-npm i element-theme -D
+$ npm i element-theme -D
 ```
 
 - **安装element-theme-default**
 ```
-npm i element-theme-default -D 
+$ npm i element-theme-default -D 
 ```
 
 - **生成变量文件**
 
 ```
-node_modules/.bin/et -i
+$ node_modules/.bin/et -i
 ```
 ![image_1b92frkkv1g7h7fo1pd41kp31k55m.png-13.9kB][7]
 
@@ -64,7 +65,7 @@ node_modules/.bin/et -i
 - **生成主题文件**
 在上一步编辑好 `element-variables.css` 后，执行此步骤:
 ```
-node_modules/.bin/et
+$ node_modules/.bin/et
 ```
 
 ![image_1b92fs857n5d9k2car8did0g13.png-15.2kB][9]
@@ -75,12 +76,12 @@ node_modules/.bin/et
 
 注意，只需要引入`index.css`
 ```
-import './theme/index.css';
+$ import './theme/index.css';
 ```
 
 接下来，你就可以使用自己的主题了。
 
-# 库
+# 已经引入的库
 
 name | version
 --- | ---
@@ -92,9 +93,9 @@ lodash | 4.0.0+
 element-ui | 1.0.0+
 
 
-# 使用Typescript开发Vue要注意的点
+# 注意点
 
-## Typescript2以前
+## Typescript 2 以前
 
 声明文件（.d.ts文件）是在TypeScript中使用现有JavaScript库的一个基本组成部分。
 
