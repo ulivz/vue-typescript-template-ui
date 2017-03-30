@@ -108,17 +108,23 @@ element-ui | 1.0.0+
 所有的`js`库在引入`ts`时，都必须顺带地加入类型声明文件（`d.ts`）,早期，有一个非常出色的库——[DefinitelyTyped][10]，它拥有一些主流的js库的类型声明文件。此外，为了更便捷地进行安装，还有一个非常强大的ts类型声明管理库——[typings][11]，它允许你通过这样的方式进行安装一个库的类型声明文件：
 
 首先全局安装typings：
+
 ```
 npm install typings -g
 ```
+
 推荐采用这种方式进行一个类型定义库的安装：
+
 ```
 typings install dt~vue --global --save
 ```
+
 然后，项目根目录下会出现typings目录，结构如下：
+
 ![image_1b92hf66j18vo1ic71tcbcp1iac1t.png-8.5kB][12]
 
 index.d.ts 的内容如下：参见ts的[三斜线指令][13]和[模块解析][14]
+
 ```
 /// <reference path="globals/vue/index.d.ts" />
 ```
@@ -129,9 +135,9 @@ index.d.ts 的内容如下：参见ts的[三斜线指令][13]和[模块解析][1
 import * as Vue from 'vue';
 ```
 
-但凡是会引入ts的库，如vue全家桶，或者lodash，都必须通过上述方式获取dts类型声明文件。
+但凡是会引入ts的库，如`vue全家桶`，或者`lodash`，都必须通过上述方式获取dts类型声明文件。
 
-但是，Typescript2开始有了一些变化，请看下文。
+但是，`Typescript2`开始有了一些变化，请看下文。
 
 ---
 
@@ -141,7 +147,7 @@ import * as Vue from 'vue';
 
 总的意思就是，**在TypeScript 2.0中获取类型声明除了npm之外不需要任何工具。**
 
-比如，想要引入lodash，只需要执行:
+比如，想要引入`lodash`，只需要执行:
 
 ```
 npm install --save @types/lodash
