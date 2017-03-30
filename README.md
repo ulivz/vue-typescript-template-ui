@@ -1,15 +1,15 @@
 # vue-typescript-template-ui
 
-一个非常简单的为[Vue2.0][1]和[TypeScript2.0][2]准备的项目开发环境，可以帮助你快速地开始一个项目的开发。
+一个非常简单的为[`Vue2.0`][1]和[`TypeScript2.0`][2]准备的项目开发环境，可以帮助你快速地开始一个项目的开发。
 
 # 特性
 
-- 引入了Vue 2.0全家桶的环境
-- 配置好了webpack
-- 配置好了一个UI库 - [element-ui][3]，让你开箱即用
-- 使用了 TypeScript2.0 以后的新特性`@types`
-- 由于Vue2.0采用ES6编写，类型声明中含有Typescript不支持的ES6特性，增加了 TypeScript2.0 对 [Promise][4] 等`es6`特性的支持
-- 引入lodash，快速开启FP
+- 引入了`Vue 2.0`全家桶的环境
+- 配置好了`webpack`
+- 配置好了一个`UI`库 - [element-ui][3]，让你开箱即用
+- 使用了 `TypeScript2.0` 以后的新特性`@types`
+- 由于`Vue2.0`采用`ES6`编写，类型声明中含有`Typescript`不支持的`ES6`特性，增加了 `TypeScript2.0` 对 [`Promise`][4] 等`es6`特性的支持
+- 引入`lodash`，快速开启`FP`
 
 有个这些特性，无需在开发环境的搭建上煞费苦心，你可以轻松地将本项目作为你的脚手架代码进行项目开发。
 
@@ -31,7 +31,7 @@ npm run build
 
 # 自定义UI组件
 
-倘若你不想引入element-ui，你也可以使用我的另外一个没有引入UI组件的纯净库：[vue-typescript-template][5]，这个库仅仅配置了Vue和TypeScript的开发环境。
+倘若你不想引入`element-ui`，你也可以使用我的另外一个没有引入UI组件的纯净库：[vue-typescript-template][5]，这个库仅仅配置了`Vue 2.0`和`TypeScript`的基本开发环境。
 
 # UI主题
 
