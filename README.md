@@ -165,7 +165,7 @@ issue | solution
 
 ## 千万不要在本项目中使用Vue-resource
 
-在之前进行项目升级的过程中，由于原项目采用的技术栈是`vue@1.0.21`、`TypeScript@1.8`、`vue-resource@0.9.3`和`vue-router@0.7.13`、`webpack@1.13.1`，我按照首先升级`typescript`, 接着升级`Webpack`，最后升级`Vue`, 结果遇到很多坑了。关于这个问题根本原因，在于`vue-resource`使用的`type`声明文件仍然仅仅使用于`vue`:
+在之前进行项目升级的过程中，由于原项目采用的技术栈是`vue@1.0.21`、`TypeScript@1.8`、`vue-resource@0.9.3`和`vue-router@0.7.13`、`webpack@1.13.1`，我按照首先升级`typescript`, 接着升级`Webpack`，最后升级`Vue`, 结果遇到很多坑。关于这个问题根本原因，在于`vue-resource`使用的`type`声明文件仍然还在使用`vue 1`的`d.ts`:
 
 运行：
 
