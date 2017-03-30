@@ -28,11 +28,13 @@ npm run dev
 npm run build
 ```
 
+---
 
 # 自定义UI组件
 
 倘若你不想引入`element-ui`，你也可以使用我的另外一个没有引入UI组件的纯净库：[vue-typescript-template][5]，这个库仅仅配置了`Vue 2.0`和`TypeScript`的基本开发环境。
 
+---
 
 # UI主题
 
@@ -81,6 +83,8 @@ $ import './theme/index.css';
 
 接下来，你就可以使用自己的主题了。
 
+---
+
 # 已经引入的库
 
 name | version
@@ -94,6 +98,8 @@ element-ui | 1.0.0+
 
 
 # 注意点
+
+---
 
 ## Typescript 2 以前
 
@@ -126,6 +132,8 @@ import * as Vue from 'vue';
 但凡是会引入ts的库，如vue全家桶，或者lodash，都必须通过上述方式获取dts类型声明文件。
 
 但是，Typescript2开始有了一些变化，请看下文。
+
+---
 
 ## Typescript2以后
 
