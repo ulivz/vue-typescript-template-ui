@@ -34,7 +34,8 @@ module.exports = {
         // Add `.ts` and `.tsx` as a resolvable extension.
         extensions: ['.ts', '.tsx', '.js', 'html'],
         alias: {
-            'vue$': 'vue/dist/vue.common.js'
+            'vue$': 'vue/dist/vue.common.js',
+	        'vue-router$': 'vue-router/dist/vue-router.common.js'
         }
     },
     devServer: {
