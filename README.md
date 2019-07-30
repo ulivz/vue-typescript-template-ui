@@ -1,5 +1,7 @@
 # vue-typescript-template-ui
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ulivz/vue-typescript-template-ui.svg)](https://greenkeeper.io/)
+
 一个非常简单的为[`Vue2.0`][1]和[`TypeScript2.0`][2]准备的项目开发环境，可以帮助你快速地开始一个项目的开发。
 
 # 特性
