@@ -12,7 +12,7 @@
     "@types/es6-promise": "0.0.32",
     "@types/lodash": "^4.14.52",
     "@types/requirejs": "^2.0.0",
-    "element-theme": "^0.7.1",
+    "element-theme": "^2.0.0",
     "element-ui": "^1.1.6",
     "vue": "^2.0.0",
     "vue-router": "^2.0.0"
